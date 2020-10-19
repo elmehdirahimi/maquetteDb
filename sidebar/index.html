@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sidebar</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              <strong>Plan 2D</strong>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 my_col">
+                <button type="button" class="btn btn-primary btn_plan">
+                  <span>
+                    <i
+                      class="fa fa-map"
+                      style="margin-right: 15px;"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <strong>PLAN 2D</strong>
+                </button>
+              </div>
+              <div class="col-6 my_col">
+                <button type="button" class="btn btn-primary btn_plan">
+                  <span>
+                    <i
+                      class="fa fa-cube"
+                      style="margin-right: 15px;"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <strong>PLAN 3D</strong>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my_col">
+                <img
+                  src="./img/E173.jpg"
+                  style="max-width: 100%; max-height: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Fermer
+            </button>
+            <button type="button" class="btn btn-primary">
+              <span>
+                <i class="fa fa-download" aria-hidden="true"></i>
+              </span>
+              Telecharger PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar" class="active">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="p-4">
+          <img
+            src="img/E173.jpg"
+            alt=""
+            style="width: 100%; cursor: zoom-in;"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          />
+          <div class="mb-5" style="margin-top: 25px;">
+            <button
+              type="button"
+              class="btn btn-primary visiter"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              VISITER
+            </button>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h6 class="gry">PRIX</h6>
+              </div>
+              <div class="col-md-6">
+                <strong>N.C</strong>
+              </div>
+            </div>
+            <hr />
+
+            <div class="row" style="margin-bottom: 9px;">
+              <!-- star -->
+              <div class="col-md-6">
+                <h6 class="gry margin">
+                  lot
+                </h6>
+                <strong>
+                  T4
+                </strong>
+              </div>
+              <div class="col-md-6">
+                <h6 class="gry margin">
+                  ETAGE
+                </h6>
+                <strong>
+                  R+7
+                </strong>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="row" style="margin-bottom: 9px;">
+              <!-- star -->
+              <div class="col-md-6">
+                <h6 class="gry margin">
+                  typologie
+                </h6>
+                <strong>
+                  T2
+                </strong>
+              </div>
+              <div class="col-md-6">
+                <h6 class="gry margin">
+                  surface hab.
+                </h6>
+                <strong>
+                  43.33 m
+                </strong>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="row" style="margin-bottom: 9px;">
+              <!-- star -->
+              <div class="col-md-6">
+                <h6 class="gry margin">
+                  terrasse
+                </h6>
+                <strong>
+                  6.2 m²
+                </strong>
+              </div>
+              <!-- end -->
+            </div>
+
+            <hr />
+            <div class="row" style="margin-bottom: 9px;">
+              <!-- star -->
+              <div class="col-md-6">
+                <h6 class="gry margin">
+                  complément
+                </h6>
+                <strong>
+                  terrasse
+                </strong>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="row" style="margin-bottom: 9px;">
+              <!-- star -->
+              <div class="col-md-12">
+                <h6 class="gry margin">
+                  Exposition
+                </h6>
+                <strong>
+                  Sud
+                </strong>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5"></div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
